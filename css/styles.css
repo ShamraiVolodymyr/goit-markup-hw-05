@@ -102,8 +102,6 @@ ul {
   bottom: 0px;
 }
 
-.header-item {
-}
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -252,6 +250,34 @@ ul {
   padding-bottom: 94px;
 }
 
+.about-item {
+  display: block;
+  position: relative;
+}
+
+.position::after {
+  position: absolute;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  color: var(--main-title-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0px;
+  right: 0px;
+}
+
+.position-desc::after {
+  content: "ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ";
+}
+.position-mob::after {
+  content: "МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ";
+}
+.position-disain::after {
+  content: "ДИЗАЙНЕРСКИЕ РЕШЕНИЯ";
+}
 /* --------------------HERO-------------------- */
 .document-title {
   font-family: inherit;
